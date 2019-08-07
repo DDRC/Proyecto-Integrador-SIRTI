@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIRTI</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+</head>
+<style type="text/css">
+    table,
+    th,
+    td {
+
+        border: 2px solid green
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+
+    td,
+    th {
+        text-align: center;
+    }
+
+body{
+    background: url(static/imagenes/SIRTI.png);
+    background-size: cover;
+}
+#dts{
+    background-color: rgba(200, 215, 235, .8)
+}
+#reserva{
+    background-color: rgba(200, 215, 235, .8)
+}
+</style>
+
+<body class="text-center">
+    <div id="dts">
+        <form action="" id="form">
+            <marquee behavior="slide" direction="left" width=20%> <h2>DATOS CLIENTE</h2></marquee>
+<br><br>
+            <label for="" class="col col-2 ">NOMBRE:</label>
+            <input type="text" class="col col-2 " name="nombre" id="nombre" placeholder="Ingresar su nombre" ><br>
+            <label for="" class="col col-2 ">APELLIDO:</label>
+            <input type="text" class="col col-2 " name="nombre" id="apellido" placeholder="Ingresar su apellido" ><br>
+    
+            <label for="" class="col col-2 ">TELEFONO:</label>
+            <input type="number" class="col col-2 " name="telefono" id="telefono" placeholder="Ingresar su telefono" maxlength="10"><br>
+    
+            <label for="" class="col col-2 ">CEDULA:</label>
+            <input type="number" class="col col-2 " name="cedula" id="cedula" placeholder="Ingresar su cedula" maxlength="10"><br>
+    
+            <label for="" class="col col-2 ">TOTAL:</label>
+            <input type="text" class="col col-2 " name="valor" id="valor" placeholder="Valor a pagar" disabled="true"><br>
+            
+        </form>
+    </div>
+<div id="reserva">
+    <marquee behavior="slide" direction="left" width=50%> <h1>FORMULARIO DE RESERVA</h1></marquee>
+    <table style="width: 50%" id="tb_viajes"  >
+        <tr>
+            <th rowspan="2">Cooperativas</th>
+            <th rowspan="2">Destino</th>
+            <th rowspan="2">Fecha de salida</th>
+            <th rowspan="2">Hora de salida</th>
+            <th rowspan="2">Numero de Unidad</th>
+            <th rowspan="2">Numero de Anden</th>
+            <th rowspan="2">Valor de la reservas</th>
+            <th colspan="2">Numero de reservas</th>
+            
+            <th rowspan="2">Elegir</th>
+        </tr>
+        <tr>
+            <th> DISPONIBLES</th>
+            <th> A RESERVAR</th>
+        </tr>
+    </table>
+
+    <br><br>
+            <input type="submit" value="Reservar" onclick="Reserva()">
+            <input type="button" value="Cancelar" onclick="inicio()">
+            
+</div>
+</body>
+<script src="static/js/G_viajes.js"></script>
+<script src="static/js/res_cliente.js"></script>
+
+</html>

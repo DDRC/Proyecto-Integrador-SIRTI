@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIRTI</title>
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<style>
+body{
+    background: url(static/imagenes/SIRTI.png);
+    background-size: cover;
+}
+#dts{
+    background-color:rgba(200, 215, 175, .8)
+}
+</style>
+</head>
+<body class="text-center">
+
+<div id="dts" >
+        <marquee behavior="slide" direction="left" width=50%> <h1>Creacion de viajes interprovinciales</h1></marquee>
+    <form action ="" id="form">
+        <label for="" class="col col-2 ">COOPERATIVA*:</label>
+        <input type="text" class="col col-2" name="nombre" id="nombre" placeholder="Ingresar cooperativa"/><br>
+        <label for="" class="col col-2 ">DESTINO*:</label>
+        <input type="text" class="col col-2" name="destino" id="destino" placeholder="Ingresar su destino"/><br>
+        <label for="" class="col col-2 ">FECHA*:</label>
+        <input type="date" class="col col-2" name="fecha" id="fecha" placeholder="Ingresar fecha"/><br>
+        <label for="" class="col col-2 ">HORA*:</label>
+        <input type="time" class="col col-2" name="hora" id="hora" placeholder="Ingresar hora"/><br>
+        <label for="" class="col col-2 ">CAPACIDAD*:</label>
+        <input type="currency" class="col col-2" name="capacidad" id="capacidad" placeholder="Capacidad de la unidad" min="1" max="50" maxlength="2"><br>
+        <label for="" class="col col-2 "># de  UNIDAD*:</label>
+        <input type="currency" class="col col-2" name="unidad" id="unidad" placeholder="# Unidad" min="1" maxlength="2"><br>
+        <label for="" class="col col-2 "># de ANDEN*:</label>
+        <input type="currency" class="col col-2" name="anden" id="anden" placeholder="# Anden" min="1" max="30" maxlength="2"><br>
+        <label for=""  class="col col-2 ">COSTO POR BOLETO*:</label>
+        <input type="currency" class="col col-2" name="anden" id="boleto" placeholder="Costo por boleto" min="1" max="50" maxlength="5"><br>  
+        <input type="button" value="Guardar" onclick="Guardar()">
+        <input type="button" value="Cancelar" onclick="Cancelar()">
+        
+    </form>
+</div>
+    <script src="static/js/G_viajes.js">
+
+    </script>
+</body>
+</html>
